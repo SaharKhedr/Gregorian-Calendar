@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="calendar.css">
+	<script type="text/javascript" src="calendar.js"></script>
+</head>
+<body>
+	<div class="years">
+		<ul>
+			<li><button class="ctrl" id="prevBtn" type="button">Prev</button></li>
+			<li id="currentYear">2023</li>
+			<li><button class="ctrl" id="nextBtn" type="button">Next</button></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="first">
+			<div class="month" id="jan">
+				<h3>Jan</h3>
+				<table id="table11">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="feb">
+				<h3>Feb</h3>
+				<table id="table12">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="mar">
+				<h3>Mar</h3>
+				<table id="table1">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="second">
+			<div class="month" id="apr">
+				<h3>Apr</h3>
+				<table id="table2">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="may">
+				<h3>May</h3>
+				<table id="table3">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="jun">
+				<h3>Jun</h3>
+				<table id="table4">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="third">
+			<div class="month" id="jul">
+				<h3>Jul</h3>
+				<table id="table5">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="aug">
+				<h3>Aug</h3>
+				<table id="table6">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="sep">
+				<h3>Sep</h3>
+				<table id="table7">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="fourth">
+			<div class="month" id="oct">
+				<h3>Oct</h3>
+				<table id="table8">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="nov">
+				<h3>Nov</h3>
+				<table id="table9">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="month" id="dec">
+				<h3>Dec</h3>
+				<table id="table10">
+					<tr id="weekDays">
+						<th>Su</th>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th class="weekEnd">Fr</th>
+						<th class="weekEnd">Sa</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+					<tr><td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="weekEnd"></td>
+						<td class="weekEnd"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
